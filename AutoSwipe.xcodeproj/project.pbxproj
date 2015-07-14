@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		16F361FA1B54D2CE0052DECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F361F91B54D2CE0052DECA /* AppDelegate.swift */; };
-		16F361FC1B54D2CE0052DECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F361FB1B54D2CE0052DECA /* ViewController.swift */; };
-		16F361FF1B54D2CE0052DECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F361FD1B54D2CE0052DECA /* Main.storyboard */; };
 		16F362011B54D2CE0052DECA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F362001B54D2CE0052DECA /* Images.xcassets */; };
 		16F362041B54D2CE0052DECA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F362021B54D2CE0052DECA /* LaunchScreen.xib */; };
 		16F362101B54D2CE0052DECA /* AutoSwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3620F1B54D2CE0052DECA /* AutoSwipeTests.swift */; };
+		16F3621D1B54D4700052DECA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F362191B54D4700052DECA /* HomeViewController.swift */; };
+		16F3621E1B54D4700052DECA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F3621A1B54D4700052DECA /* HomeViewController.xib */; };
+		16F362201B54D4700052DECA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F3621C1B54D4700052DECA /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		16F361F41B54D2CE0052DECA /* AutoSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F361F81B54D2CE0052DECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16F361F91B54D2CE0052DECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16F361FB1B54D2CE0052DECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		16F361FE1B54D2CE0052DECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16F362001B54D2CE0052DECA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		16F362031B54D2CE0052DECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		16F362091B54D2CE0052DECA /* AutoSwipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoSwipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F3620E1B54D2CE0052DECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16F3620F1B54D2CE0052DECA /* AutoSwipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSwipeTests.swift; sourceTree = "<group>"; };
+		16F362191B54D4700052DECA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		16F3621A1B54D4700052DECA /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		16F3621C1B54D4700052DECA /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,10 @@
 		16F361F61B54D2CE0052DECA /* AutoSwipe */ = {
 			isa = PBXGroup;
 			children = (
+				16F362191B54D4700052DECA /* HomeViewController.swift */,
+				16F3621A1B54D4700052DECA /* HomeViewController.xib */,
+				16F3621C1B54D4700052DECA /* Card.swift */,
 				16F361F91B54D2CE0052DECA /* AppDelegate.swift */,
-				16F361FB1B54D2CE0052DECA /* ViewController.swift */,
-				16F361FD1B54D2CE0052DECA /* Main.storyboard */,
 				16F362001B54D2CE0052DECA /* Images.xcassets */,
 				16F362021B54D2CE0052DECA /* LaunchScreen.xib */,
 				16F361F71B54D2CE0052DECA /* Supporting Files */,
@@ -192,9 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16F361FF1B54D2CE0052DECA /* Main.storyboard in Resources */,
 				16F362041B54D2CE0052DECA /* LaunchScreen.xib in Resources */,
 				16F362011B54D2CE0052DECA /* Images.xcassets in Resources */,
+				16F3621E1B54D4700052DECA /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16F361FC1B54D2CE0052DECA /* ViewController.swift in Sources */,
 				16F361FA1B54D2CE0052DECA /* AppDelegate.swift in Sources */,
+				16F3621D1B54D4700052DECA /* HomeViewController.swift in Sources */,
+				16F362201B54D4700052DECA /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +240,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		16F361FD1B54D2CE0052DECA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16F361FE1B54D2CE0052DECA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		16F362021B54D2CE0052DECA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
